@@ -1,10 +1,17 @@
-import { useGetProductsQuery } from "../../services/productsApi";
+import { useState } from "react";
+import { useDeleteProductMutation, useGetProductsQuery } from "../../services/productsApi";
+import UpdateProduct from "./UpdateProduct";
 
 const ProductsView = () => {
+  const [editingProduct, setEditingProduct]= useState(null);
+
   const { data: products, isLoading, error } = useGetProductsQuery();
  
-const handleDelete= (id)=>{
-alert(id);
+  const [deleteProduct]= useDeleteProductMutation();
+ 
+
+const handleDelete= async (id)=>{
+await deleteProduct(id);
 }
   return (
     <div>
@@ -19,12 +26,14 @@ alert(id);
                 <h3>{product.title}</h3>
                 <p>{product.description}</p>
                 <p>{product.price}</p>
+                <button onClick={()=>setEditingProduct(product)}>Edit</button>
                 <button onClick={()=>handleDelete(product.id)}>Delete</button>
               </article>
             );
           })}
         </section>
       )}
+        {editingProduct && <UpdateProduct editingProduct={editingProduct} setEditingProduct={setEditingProduct}/>}
     </div>
   );
 };
