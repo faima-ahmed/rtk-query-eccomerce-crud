@@ -1,0 +1,39 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "title": "Powder Canister",
+        "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
+        "category": "beauty",
+        "price": 14.99
+      },
+      {
+        "id": "2",
+        "title": "Eyeshadow Palette with Mirror",
+        "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
+        "category": "beauty",
+        "price": 19.99
+      },
+      {
+        "id": "TAnj8GQOD5r1fniVI8bep",
+        "title": "red Lipstick",
+        "price": "12",
+        "description": "habijabi",
+        "category": "beauty"
+      },
+      {
+        "title": "iphone15 ",
+        "price": "10",
+        "description": "beautyful pen",
+        "category": "beauty",
+        "id": "9hVcX6Wta68A2pwPKlhjB"
+      },
+      {
+        "title": "iphone 15 pro",
+        "price": "200",
+        "description": "awsome",
+        "category": "beauty",
+        "id": "G_d1GpVOQsqSlDVxWkFlI"
+      }
+    ]
+  }
